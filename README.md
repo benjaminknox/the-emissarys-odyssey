@@ -22,12 +22,12 @@ Follow these simple steps to get started with this WordPress boilerplate on unix
 
 1. Clone this repository to your local machine.
 
-2. To start the local development environment, simply run the start-local.sh script located in the root of the repository:
+2. To start the local development environment, simply run the `start-local` script located in the root of the repository:
 
-  ```bash
-  ./start-local
-  ```
-  This script will handle the Docker Compose setup and start the necessary containers for your local WordPress development environment.
+    ```bash
+    ./start-local
+    ```
+    This script will handle the Docker Compose setup and start the necessary containers for your local WordPress development environment.
 
 3. Access your WordPress site by navigating to http://localhost:8080 in your web browser.
 
