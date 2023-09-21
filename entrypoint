@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo "Copying wp-content..."
+
+for dir in $(find .wp-content -maxdepth 2 -mindepth 2 -type d -printf '%d\t%P\n' | sort -r -nk1 | cut -f2-) ; do
+  rm -rf wp-content/$dir
+  cp -rf .wp-content/$dir wp-content/$dir
+done
+
+chown -R www-data:www-data wp-content
+
+/usr/local/bin/docker-entrypoint.sh apache2-foreground
