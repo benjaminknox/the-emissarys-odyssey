@@ -10,13 +10,11 @@ The outcome of this deployment is a live WordPress website hosted at [the-emissa
 
 ### Repository Contents
 
-- **Kubernetes Deployment Configuration:** This repository includes a Kubernetes deployment file named [k8s.yaml](https://github.com/benjaminknox/the-emissarys-odyssey/blob/main/k8s.yaml). This configuration file outlines the deployment specifications for your Kubernetes cluster.
+- **Kubernetes Deployment Configuration:** This repository includes a Kubernetes deployment file named [k8s.yaml](https://github.com/benjaminknox/the-emissarys-odyssey/blob/main/k8s.yaml). This configuration file outlines the deployment specifications to a private Kubernetes cluster.
 
-- **Jenkins Pipeline:** You can find a custom Jenkins pipeline in the file named [./jenkins/deployment-pipeline](https://github.com/benjaminknox/the-emissarys-odyssey/blob/main/.jenkins/deployment-pipeline). This pipeline is designed to automate the deployment process for your Kubernetes applications, ensuring efficiency and consistency. (It uses custom pipeline variables which are defined in a private repository and deploys to a private jenkins cluster)
+- **Jenkins Pipeline:** You can find a custom Jenkins pipeline in the file named [./jenkins/deployment-pipeline](https://github.com/benjaminknox/the-emissarys-odyssey/blob/main/.jenkins/deployment-pipeline). This pipeline is designed to automate the deployment process for the Kubernetes deployment file above, ensuring efficiency and consistency. (It uses custom pipeline variables which are defined in a private repository and deploys to a private jenkins cluster)
 
 - **WordPress Docker Container:** The repository also contains a WordPress Docker container configured for seamless theme and plugin development within the Kubernetes environment [Dockerfile](https://github.com/benjaminknox/the-emissarys-odyssey/blob/main/Dockerfile). This container can be customized to meet your specific WordPress application needs.
-
-Explore these components to understand and implement Kubernetes deployment automation with Jenkins for your projects.
 
 
 ### License
