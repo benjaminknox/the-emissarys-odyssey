@@ -1,0 +1,41 @@
+pipeline {
+
+  agent none
+
+  stages {
+    stage ('build') {
+      agent {
+        kubernetes {
+          yaml k8sDeploymentAgent()
+        }
+      }
+
+      steps {
+        getRepoCode()
+        manageSecrets(
+          'staging',
+          [
+            "WORDPRESS_DB_HOST",
+            "WORDPRESS_DB_USER",
+            "WORDPRESS_DB_PASSWORD",
+            "WORDPRESS_DB_NAME",
+          ]
+        )
+        buildContainer()
+      }
+    }
+
+    stage('Deploy App') {
+      agent {
+        kubernetes {
+          yaml k8sDeploymentAgent()
+        }
+      }
+
+      steps {
+        getRepoCode()
+        deploy('staging', 'k8s')
+      }
+    }
+  }
+}
