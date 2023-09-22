@@ -6,7 +6,7 @@ This repository serves as a hands-on showcase of Kubernetes deployment automatio
 
 This project is built upon [benjaminknox/cloud-wordpress](https://github.com/benjaminknox/cloud-wordpress), a versatile Docker-based solution for deploying WordPress across different environments.
 
-The outcome of this deployment is a live WordPress website hosted at [the-emissarys-odyssey.knox.pro](https://the-emissarys-odyssey.knox.pro/). It's important to note that this website primarily serves as a code demonstration rather than a showcase of storytelling prowess. To create blog posts I've used ChatGPT, and I'll be sharing them periodically.
+The outcome of this deployment is a live WordPress website hosted at [the-emissarys-odyssey.knox.pro](https://the-emissarys-odyssey.knox.pro/). It's important to note that this website primarily serves as a code demonstration rather than a showcase of storytelling. To create blog posts I've used ChatGPT, and I'll be sharing them periodically.
 
 ### Repository Contents
 
